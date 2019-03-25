@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aG0-fU-vbi">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--細胞-->
+        <scene sceneID="egn-r8-vcP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d1T-H1-Zct" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="細胞" id="4xa-Uc-zEu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oz5-Uh-QXe">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZdK-rk-DdY" kind="relationship" relationship="rootViewController" id="kGu-D1-IuZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1g4-C0-2C8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="792.95352323838085"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="rbK-5J-0rm">
+            <objects>
+                <tableViewController id="ZdK-rk-DdY" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ben-Ip-olY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="血液與免疫系統" id="U8z-k0-Pn8">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="kNo-ZO-LRF" style="IBUITableViewCellStyleDefault" id="7C2-mn-Wc9">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7C2-mn-Wc9" id="FXv-UU-h56">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="紅血球" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kNo-ZO-LRF">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="T1E-QB-oxp" kind="show" id="ifm-q5-CLb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="HR6-FM-FyD" imageView="TAK-A3-4c5" style="IBUITableViewCellStyleDefault" id="GlB-no-V6A">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GlB-no-V6A" id="s1e-d9-Sox">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="白血球(嗜中性球）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HR6-FM-FyD">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TAK-A3-4c5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="75i-GO-rcb" kind="show" id="79P-Ui-1yk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="bLe-Hy-lU3" style="IBUITableViewCellStyleDefault" id="vuL-cx-eEh">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vuL-cx-eEh" id="hb1-MV-XTy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="殺手Ｔ細胞" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bLe-Hy-lU3">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hRS-HO-P7A" kind="show" id="Lef-ad-dCD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="IXr-E9-wFO" style="IBUITableViewCellStyleDefault" id="mEW-4f-VGd">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mEW-4f-VGd" id="WZ6-gN-Jx8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="血小板" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IXr-E9-wFO">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ccU-RS-1lI" kind="show" id="Rx6-ih-2IC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ZdK-rk-DdY" id="FVJ-ng-NJg"/>
+                            <outlet property="delegate" destination="ZdK-rk-DdY" id="x6g-Aq-Y0U"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="q5W-AO-Shj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kg5-Tq-6GA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XdR-D0-a2s">
+            <objects>
+                <viewController id="T1E-QB-oxp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kku-j7-Ubo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="紅血球（英語：Red blood cells, RBCs），又稱為紅細胞或血紅細胞，是血液中數量最多的一種血球，同時也是脊椎動物體內通過血液將氧氣從肺或鰓運送到身體各個組織的最主要的媒介。破裂中的紅血球或其碎片則稱為裂紅細胞（schistocyte）。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGI-QZ-wUf">
+                                <rect key="frame" x="16" y="441" width="343" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Redbloodcells" translatesAutoresizingMaskIntoConstraints="NO" id="WIV-ax-eNF">
+                                <rect key="frame" x="0.0" y="146" width="375" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62745098039215685" green="1" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="ORT-zu-Mcq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vis-wj-cY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5999999999999" y="130.88455772113943"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jmY-C3-LLr">
+            <objects>
+                <viewController id="75i-GO-rcb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cPz-kF-U2V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="500px-SEM_blood_cells" translatesAutoresizingMaskIntoConstraints="NO" id="We9-v9-Yyd">
+                                <rect key="frame" x="0.0" y="150" width="375" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGa-Az-8BC">
+                                <rect key="frame" x="0.0" y="430" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">嗜中性球（英語：Neutrophil或 Neutrophil granulocyte）是血液白血球的一種，也是哺乳動物血液中最主要的一種白血球。嗜中性球在非特異性免疫系統中有著非常重要的作用。
+用蘇木精-伊紅染色時，嗜中性球的染色顆粒為粉紅中性。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62745098039215685" green="1" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="vbk-qZ-eg7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Is-CR-LrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693.5999999999999" y="130.88455772113943"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="l9o-Z0-YfV">
+            <objects>
+                <viewController id="hRS-HO-P7A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pmo-mL-5eC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="500px-Healthy_Human_T_Cell" translatesAutoresizingMaskIntoConstraints="NO" id="9O8-jT-ywp">
+                                <rect key="frame" x="0.0" y="147" width="375" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JNS-BT-6QB">
+                                <rect key="frame" x="0.0" y="366" width="375" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">細胞毒性T細胞（英語：cytotoxic T cell，TC或CTL），也稱殺手T細胞（killer T cell），TC細胞、胞殺T細胞、胞毒T細胞，或CD8+ T細胞，屬於T細胞的一種，可以殺死癌細胞、受病毒感染的細胞，以及其他受損的細胞。
+大部份的胞毒T細胞會辨識特定的抗原，而辨識的受體則稱為T細胞受體。這些抗原則常常是由癌細胞和病毒製造的。胞內抗原會與第一型MHC分子結合，並被帶到細胞表面，以利於T細胞辨識。一旦被TCR辨識出特定的受體，T細胞便會摧毀該細胞。
+有些T細胞受體中含有一種稱為CD8的醣蛋白，可與MHC1類分子結合，也因此，這些細胞又稱為CD8+ T細胞。
+和第一型MHC分子結合的CD8 T細胞會發育為細胞毒性T細胞，而CD8分子則會持續牢牢的抓著第一型MHC分子，不讓目標細胞離開，以進行細胞毒殺。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62745098039215685" green="1" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Z8T-5T-tNA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1G-z9-fsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2325.5999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bC5-iB-Tgd">
+            <objects>
+                <viewController id="ccU-RS-1lI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1MD-3A-RDn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="500px-Platelets2" translatesAutoresizingMaskIntoConstraints="NO" id="WCj-ph-EcA">
+                                <rect key="frame" x="0.0" y="153" width="375" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8d-DR-MOa">
+                                <rect key="frame" x="0.0" y="371" width="375" height="304"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">血小板（英語：platelet），也稱血栓細胞（英語：thrombocytes，源自於希臘語的θρόμβος「凝塊」以及κύτος「細胞」），為血液的一個組成部分，可與凝血因子一起，藉由結塊作用，對血管受傷而出血的部位進行反應，進而形成凝塊[1]。血小板沒有細胞核：它們是細胞質的一部份，分離自骨髓當中的巨核細胞[2]，然後進入循環系統。在循環系統中未活化的血小板，為雙凸盤狀（透鏡狀）結構[3][4]:117–18，最大的血小板直徑約為2-3微米[5]。血小板只有在哺乳動物當中發現，其他動物（如鳥類、兩棲類）循環系統中的血栓細胞則為完整無缺的單核細胞[4]:3。
+在染色過的血塗片中，血小板會呈現出暗紫色的斑點，直徑約為紅血球的20%。血塗片主要用於檢驗血小板的大小、形狀、數量以及凝結能力。一般來說，健康成人的血小板與紅血球的比率為1比10至1比20。
+血小板的主要功能，對於止血而言具有貢獻，具體而言就是在血管內皮被截斷的部位執行止血的功能。血小板會聚集在內皮被截斷的部位；除非該部位實際上非常大，它們就會堵住其洞口。首先，血小板會緊貼被截斷內皮的外側，稱為「黏附」。其次，血小板會改變形狀，開啟受體並分泌化學傳訊者，稱為「活化」。第三，血小板會透過受體互相橋接，稱為「聚合」[6]。血小板栓子的形成（主要止血作用）與凝血因子的活化，以及纖維蛋白的產生、沉積與連結（次要止血作用）有關。這些過程可能會有所重疊，可能會形成大多數血小板栓子，或是由大多數纖維蛋白凝塊組成的「白色凝塊」，也可能是更多典型混合物所組成的「紅色凝塊」。上述作用最後產生的結果就稱為「凝塊」。部分論述會將隨後的凝塊收縮以及血小板抑制作用作為止血的第4與第5步驟[7]，還有部分論述則是將傷口修復作為第6步驟。
+血小板濃度過低被稱為血小板低下症，起因於血小板產生的數量下降，或是血小板被破壞的數量上升。血小板濃度過高，則被稱為血小板增多症，起因可能為先天性、反應性（如細胞激素）或不正常增生（如骨髓增殖性疾病或其他特定的骨髓腫瘤等）。血小板功能相關的疾病還有血小板數目不正常病（thrombocytopathy）。
+正常的血小板可能會因非出血的血管內壁異常而產生反應，導致血小板的異常黏附以及引發血栓形成，也就是在完好的血管內部形成凝塊。這種類型的血栓起因於非正常凝聚的機制所引發，也就是會從靜脈栓塞當中的纖維蛋白凝塊開始延展；如果是從不穩定且破裂的動脈斑塊開始延展，會導致動脈血栓（venous thrombosis）形成；此外還有微循環的血栓。動脈血栓可能會部分阻斷血流，導致下游血管缺血；或者，如果動脈血栓完全阻斷血流，就會導致下游的組織壞死。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62745098039215685" green="1" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="X5t-sd-ZCF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGh-Is-hTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3013.5999999999999" y="128.57142857142858"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="B8l-eP-40k">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aG0-fU-vbi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bq6-qZ-fnR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="d1T-H1-Zct" kind="relationship" relationship="viewControllers" id="hIa-2i-5t7"/>
+                        <segue destination="lWZ-1I-0GK" kind="relationship" relationship="viewControllers" id="ypf-rO-hqR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8l-iv-UXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="792.95352323838085"/>
+        </scene>
+        <!--病菌-->
+        <scene sceneID="cbv-xJ-OMF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lWZ-1I-0GK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="病菌" id="aOU-Fc-JyY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3j0-FW-pBX">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NyX-2H-nkb" kind="relationship" relationship="rootViewController" id="lhx-GI-Vvn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L68-Zf-X4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5999999999999" y="1466.7166416791606"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="ObW-at-guY">
+            <objects>
+                <tableViewController id="NyX-2H-nkb" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Hf-st-RPi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="UFv-mH-1OP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Eka-dA-OLk" style="IBUITableViewCellStyleDefault" id="7Z0-Dy-8Jh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Z0-Dy-8Jh" id="v6A-hv-2QG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="肺炎鏈球菌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eka-dA-OLk">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dyG-GS-1dy" kind="show" id="GsK-RW-QFM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Qb3-Mh-t8l" style="IBUITableViewCellStyleDefault" id="OAa-qS-8z8">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OAa-qS-8z8" id="JiD-Fe-a2D">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="金黃色葡萄球菌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qb3-Mh-t8l">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5fW-QD-5y8" kind="show" id="qe5-5w-1fS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="bpf-Fc-UQD" style="IBUITableViewCellStyleDefault" id="jUX-Ov-4tl">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jUX-Ov-4tl" id="Mnj-su-r8v">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="螺旋桿菌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bpf-Fc-UQD">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="X38-Zo-X6Y" kind="show" id="Jwv-JA-2n3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="NyX-2H-nkb" id="hei-n2-P5E"/>
+                            <outlet property="delegate" destination="NyX-2H-nkb" id="NyI-AY-nHJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="09E-Id-9cw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6m-PC-osa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730" y="1466"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xwi-s8-9eg">
+            <objects>
+                <viewController id="dyG-GS-1dy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="myf-3h-9VB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdI-L5-la4">
+                                <rect key="frame" x="0.0" y="392" width="375" height="308"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">肺炎鏈球菌是一種普遍導致成人感染細菌性腦膜炎的病菌，亦是首兩種在中耳炎發現的分離株。由肺炎鏈球菌引致的肺炎是在年幼或年長的人中最經常出現。
+肺炎鏈球菌與同是alpha溶血性的草綠色鏈球菌是有所分別，因肺炎鏈球菌是對奧普托辛（optochin）較敏感，所以能透過奧普托辛測試驗出牠們的分別。肺炎鏈球菌的菌體是有莢膜包裹及呈革蘭氏陽性，與草綠色鏈球菌在革蘭氏染色有型態上的不同（肺炎鏈球菌染色型態的是呈針刺狀）。牠有著一個多醣莢膜，是一種重要的致病因子。由於莢膜的化學成份的緣故，牠不會引起未曾發展漿性免疫的嬰兒及孩童的免疫抵抗。 傳染途徑可經由人與人之間直接接觸到帶菌的口鼻分泌物，或經由 吸入含有此病原菌之飛沫，通常需要長時間或密切接觸才可能遭受感染。肺炎鏈球菌的帶菌者可能會因為本身免疫功能減低或同時感染呼吸道病毒性疾病等，導致細菌從呼吸道或血液侵襲器官，進而引發中耳炎、敗血症、菌血症、肺炎及腦膜炎。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Streptococcus_pneumoniae" translatesAutoresizingMaskIntoConstraints="NO" id="1iS-Lo-NU1">
+                                <rect key="frame" x="0.0" y="139" width="375" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="9WZ-2k-o0Y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2K-z5-qlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357.5999999999999" y="1463.0541871921182"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zyd-u3-jXI">
+            <objects>
+                <viewController id="5fW-QD-5y8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HbV-8g-V6W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Staphylococcus_aureus_VISA_2" translatesAutoresizingMaskIntoConstraints="NO" id="vOI-dD-KTM">
+                                <rect key="frame" x="0.0" y="139" width="375" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z6D-wm-nxa">
+                                <rect key="frame" x="0.0" y="424" width="375" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">金黃色葡萄球菌（學名：Staphylococcus aureus）為一種革蘭氏染色陽性球型細菌。工業上利用金黃色葡萄球菌製備蛋白質A——抗激素化學分析中的細胞壁組成成分。 金黃色葡萄球菌在顯微鏡下排列成葡萄串狀，金黃色葡萄球菌無芽孢、鞭毛，大多數無莢膜。是常見的引起食物中毒的致病菌。常見於皮膚表面及上呼吸道黏膜。金黃色葡萄球菌可以適應含高濃度氯化鈉的培養基，因此可以用這種選擇培養基將該菌分離出來。 金黃色葡萄球菌為表皮之正常菌叢，常造成伺機性感染。細菌引起不同程度的化膿性炎症擴散疾病，如癤、癰、中耳炎、鼻竇炎、骨髓炎和膿毒病等。金黃色葡萄球菌已經進化出了抵抗免疫系統攻擊的特徵。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Hq5-pF-9JE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mf3-pC-fbC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357.5999999999999" y="2113.3004926108374"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="plc-pZ-IAa">
+            <objects>
+                <viewController id="X38-Zo-X6Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RxG-cg-dva">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Immunohistochemical_detection_of_Helicobacter_(1)_histopatholgy-2" translatesAutoresizingMaskIntoConstraints="NO" id="COv-uK-wbT">
+                                <rect key="frame" x="0.0" y="145" width="375" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwQ-rS-Kmt">
+                                <rect key="frame" x="0.0" y="402" width="375" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">幽門螺桿菌或幽門螺旋桿菌[1][2]、幽門螺旋菌、 胃幽門螺旋桿菌（學名：Helicobacter pylori，發音為/ˌhɛlɪkɵˈbæktər pɪˈlɔəraɪ/）是革蘭氏陰性、微需氧的細菌，生存於胃部及十二指腸的各區域內。它會引起胃黏膜輕微的慢性發炎，甚或導致胃及十二指腸潰瘍與胃癌。超過80%的帶原者並不會表露病徵。
+幽門螺桿菌最初被命名為幽門彎曲菌（Campylobacter pyloridis），後為修正拉丁語語法錯誤而變為C. pylori。1989年，16S rRNA基因定序等研究顯示其並不屬於彎曲菌屬，幽門螺桿菌便被獨立歸類至螺桿菌屬。螺桿菌屬（Helicobacter）源自古希臘的詞彙「hělix/ἕλιξ」（意為螺旋或纏繞）[3]。屬名加詞「pylōri」則是指「幽門的」或幽門閥（從胃部通往十二指腸的圓狀開口），源自古希臘詞彙「πυλωρός」，意為守門人。[3] 一旦家庭中成年人被發現有「胃幽門螺旋桿菌」的感染時，共同生活的孩童亦會有相同的感染現象。
+這也是一般病患在門診診治中經常提到的實際問題。根據流行病學的統計研究，發現胃幽門螺旋桿菌在人群中的感染率與社會經濟、家庭衛生環境、教育水準或者個人衛生習慣有極大的關係；換句話說，人口雜處、家庭衛生較差、教育水準較低或者個人飲食衛生習慣較差的地區，會有較高的胃幽門螺旋桿菌感染率。根據台灣地區消化內科醫學會的初步研究報告發現[來源請求]，在台灣地區居住民眾的胃幽門螺旋桿菌感染情形如下：十歲以下的孩童感染率約為20%；二十歲以下的青少年感染率約為40%；而年齡在三十歲左右者，其感染率則高達50%；四十歲以上則超過75%。對於年齡較小的幼童亦可以經由抽血檢查血清偵測其是否具有胃幽門螺旋桿菌的抗體而得知是否受感染。香港中文大學研究團隊審閱近200份醫學文章及報告，估計現時全港約有30%人口屬帶菌者[4]。病菌能刺激胃酸分泌損害胃壁，引致潰瘍，患者或會長期感到胃痛和受胃酸倒流之苦[4]。
+世界超過50%人口在消化系統上部帶原有幽門螺桿菌。感染較盛行於發展中國家，而西方國家的影響範圍也逐漸縮小。幽門螺桿菌的傳染途徑為口口或糞口傳播，但個體通常是於幼時被感染。幽門螺桿菌的螺旋狀（其亦是屬名的由來）被認為是演化以通過胃黏膜。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="mfj-Me-bko"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzD-Zl-Z42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2356" y="2758.3743842364534"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="500px-Healthy_Human_T_Cell" width="500" height="500"/>
+        <image name="500px-Platelets2" width="375" height="281.25"/>
+        <image name="500px-SEM_blood_cells" width="120" height="149.27999877929688"/>
+        <image name="Immunohistochemical_detection_of_Helicobacter_(1)_histopatholgy-2" width="500" height="376"/>
+        <image name="Redbloodcells" width="144" height="166"/>
+        <image name="Staphylococcus_aureus_VISA_2" width="340.79998779296875" height="261.83999633789062"/>
+        <image name="Streptococcus_pneumoniae" width="84" height="58.560001373291016"/>
+    </resources>
+</document>
